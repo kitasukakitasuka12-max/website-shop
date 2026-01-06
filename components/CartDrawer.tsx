@@ -14,6 +14,10 @@ interface CartDrawerProps {
 const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }) => {
   const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(price);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -23,7 +27,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
         <div className="p-6 flex items-center justify-between border-b border-white/5">
           <div className="flex items-center gap-2">
             <ShoppingCart size={20} className="text-purple-400" />
-            <h2 className="text-xl font-bold font-heading">YOUR CART</h2>
+            <h2 className="text-xl font-bold font-heading">KERANJANG ANDA</h2>
           </div>
           <button onClick={onClose} className="p-2 hover:bg-white/5 rounded-full transition-colors">
             <X size={24} />
@@ -34,8 +38,8 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
           {items.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-gray-500 space-y-4">
               <ShoppingCart size={48} strokeWidth={1} />
-              <p className="text-sm">Your manifest is empty.</p>
-              <button onClick={onClose} className="text-purple-400 font-bold hover:underline">Start Exploring</button>
+              <p className="text-sm">Manifest belanja Anda kosong.</p>
+              <button onClick={onClose} className="text-purple-400 font-bold hover:underline">Mulai Menjelajah</button>
             </div>
           ) : (
             items.map((item) => (
@@ -46,7 +50,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
                 <div className="flex-1 min-w-0">
                   <div className="flex justify-between items-start mb-1">
                     <h3 className="font-bold text-sm truncate">{item.name}</h3>
-                    <span className="text-purple-400 text-sm font-bold">${item.price * item.quantity}</span>
+                    <span className="text-purple-400 text-sm font-bold">{formatPrice(item.price * item.quantity)}</span>
                   </div>
                   <p className="text-xs text-gray-500 mb-4">{item.category}</p>
                   <div className="flex items-center justify-between">
@@ -82,10 +86,10 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
           <div className="p-6 border-t border-white/5 glass bg-white/5">
             <div className="flex justify-between items-center mb-6">
               <span className="text-gray-400 text-sm tracking-widest uppercase">Subtotal</span>
-              <span className="text-2xl font-bold font-heading">${total}</span>
+              <span className="text-2xl font-bold font-heading">{formatPrice(total)}</span>
             </div>
             <button className="w-full py-4 bg-white text-black font-bold rounded-full hover:bg-purple-500 hover:text-white transition-all shadow-lg shadow-purple-500/10">
-              INITIATE CHECKOUT
+              LANJUT KE PEMBAYARAN
             </button>
           </div>
         )}

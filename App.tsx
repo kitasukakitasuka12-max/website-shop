@@ -58,7 +58,7 @@ const App: React.FC = () => {
             <div>
               <div className="text-xl font-bold font-heading mb-6 tracking-tighter text-purple-400">LUMINA LUXE</div>
               <p className="text-sm text-gray-500 leading-relaxed mb-6">
-                Redefining the relationship between human expression and technological evolution.
+                Mendefinisikan ulang hubungan antara ekspresi manusia dan evolusi teknologi.
               </p>
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors cursor-pointer">
@@ -73,26 +73,26 @@ const App: React.FC = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigation</h4>
+              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigasi</h4>
               <ul className="space-y-4 text-sm text-gray-500">
                 <li><a href="#" className="hover:text-purple-400 transition-colors">Manifesto</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Catalog</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Archived Drops</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Size Protocol</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Katalog</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Arsip Drop</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Protokol Ukuran</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Client Service</h4>
+              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Layanan Klien</h4>
               <ul className="space-y-4 text-sm text-gray-500">
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Neural Support</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Order Tracking</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors">Secure Returns</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Dukungan Saraf</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Lacak Pesanan</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Pengembalian Aman</a></li>
                 <li><a href="#" className="hover:text-purple-400 transition-colors">FAQ</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Updates</h4>
-              <p className="text-sm text-gray-500 mb-4">Sync your neural net with our latest drops.</p>
+              <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white">Pembaruan</h4>
+              <p className="text-sm text-gray-500 mb-4">Sinkronkan jaringan saraf Anda dengan drop terbaru kami.</p>
               <div className="flex gap-2">
                 <input 
                   type="email" 
@@ -100,16 +100,16 @@ const App: React.FC = () => {
                   className="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs focus:outline-none focus:border-purple-500"
                 />
                 <button className="bg-white text-black text-xs font-bold px-4 py-2 rounded-full hover:bg-purple-500 hover:text-white transition-all">
-                  SYNC
+                  SINKRON
                 </button>
               </div>
             </div>
           </div>
           <div className="max-w-7xl mx-auto mt-24 pt-12 border-t border-white/5 text-[10px] text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2024 LUMINA LUXE SYSTEMS. ALL RIGHTS RESERVED.</p>
+            <p>© 2024 LUMINA LUXE SYSTEMS. HAK CIPTA DILINDUNGI.</p>
             <div className="flex gap-8">
-              <a href="#" className="hover:text-white">PRIVACY PROTOCOL</a>
-              <a href="#" className="hover:text-white">TERMS OF ENGAGEMENT</a>
+              <a href="#" className="hover:text-white">PROTOKOL PRIVASI</a>
+              <a href="#" className="hover:text-white">SYARAT KETENTUAN</a>
             </div>
           </div>
         </section>

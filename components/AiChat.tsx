@@ -7,7 +7,7 @@ import { ChatMessage } from '../types';
 const AiChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'Greetings. I am Lumina, your personal style AI. How can I help you elevate your aesthetic today?' }
+    { role: 'model', text: 'Salam. Saya Lumina, AI gaya pribadi Anda. Bagaimana saya bisa membantu meningkatkan estetika Anda hari ini?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -33,7 +33,7 @@ const AiChat: React.FC = () => {
         setMessages(prev => [...prev, { role: 'model', text: response }]);
       }
     } catch (error) {
-      setMessages(prev => [...prev, { role: 'model', text: "I'm experiencing a neural lag. Please try again in a moment." }]);
+      setMessages(prev => [...prev, { role: 'model', text: "Saya mengalami gangguan transmisi saraf. Mohon coba lagi sebentar lagi." }]);
     } finally {
       setIsLoading(false);
     }
@@ -62,7 +62,7 @@ const AiChat: React.FC = () => {
                 <h3 className="text-sm font-bold font-heading leading-tight">LUMINA AI</h3>
                 <div className="flex items-center gap-1">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Systems Active</span>
+                  <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Sistem Aktif</span>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ const AiChat: React.FC = () => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                placeholder="Ask Lumina about styles..."
+                placeholder="Tanya Lumina tentang gaya..."
                 className="w-full bg-white/5 border border-white/10 rounded-full py-3 pl-5 pr-12 text-sm focus:outline-none focus:border-purple-500 transition-colors"
               />
               <button 
@@ -112,7 +112,7 @@ const AiChat: React.FC = () => {
                 <Send size={16} />
               </button>
             </div>
-            <p className="text-[9px] text-center text-gray-600 mt-3 uppercase tracking-tighter">AI may generate speculative style trends.</p>
+            <p className="text-[9px] text-center text-gray-600 mt-3 uppercase tracking-tighter">AI mungkin menghasilkan tren gaya spekulatif.</p>
           </div>
         </div>
       )}

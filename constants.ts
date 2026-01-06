@@ -4,52 +4,52 @@ import { Product } from './types';
 export const PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Nebula Silk Gown',
-    price: 1299,
+    name: 'Gaun Sutra Nebula',
+    price: 19500000,
     category: 'Apparel',
-    description: 'A light-reactive gown made from synthetic spider silk with embedded bioluminescent threads.',
-    image: 'https://picsum.photos/id/10/800/1000',
+    description: 'Gaun reaktif cahaya yang terbuat dari sutra laba-laba sintetis dengan benang bioluminesensi terintegrasi.',
+    image: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&q=80&w=800',
     featured: true
   },
   {
     id: '2',
     name: 'Void Runner X1',
-    price: 450,
+    price: 6750000,
     category: 'Footwear',
-    description: 'Gravity-defying sneakers with liquid-crystal suspension soles for ultimate comfort.',
-    image: 'https://picsum.photos/id/21/800/1000',
+    description: 'Sepatu kets anti-gravitasi dengan sol suspensi kristal cair untuk kenyamanan maksimal di segala medan.',
+    image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=800',
     featured: true
   },
   {
     id: '3',
     name: 'Cyber-Optic Vizor',
-    price: 899,
+    price: 13500000,
     category: 'Accessories',
-    description: 'Neural-linked eyewear providing augmented reality overlays for the urban explorer.',
-    image: 'https://picsum.photos/id/48/800/1000'
+    description: 'Kacamata dengan tautan saraf yang menyediakan hamparan augmented reality bagi penjelajah urban.',
+    image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '4',
-    name: 'Kevlar Mesh Jacket',
-    price: 720,
+    name: 'Jaket Mesh Kevlar',
+    price: 10800000,
     category: 'Apparel',
-    description: 'Ultra-thin, breathable protection against the elements with thermal regulation technology.',
-    image: 'https://picsum.photos/id/103/800/1000'
+    description: 'Perlindungan ultra-tipis dan bernapas terhadap elemen ekstrim dengan teknologi regulasi termal.',
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '5',
-    name: 'Ion-Pulse Watch',
-    price: 350,
+    name: 'Jam Tangan Ion-Pulse',
+    price: 5250000,
     category: 'Accessories',
-    description: 'A chronometer that harvests energy from your body heat to power its holographic display.',
-    image: 'https://picsum.photos/id/175/800/1000'
+    description: 'Kronometer yang memanen energi dari panas tubuh Anda untuk menyalakan tampilan holografiknya.',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '6',
     name: 'Chrome Apex Boots',
-    price: 580,
+    price: 8700000,
     category: 'Footwear',
-    description: 'High-impact boots designed for multi-terrain versatility with a reflective metallic finish.',
-    image: 'https://picsum.photos/id/250/800/1000'
+    description: 'Sepatu bot berdampak tinggi yang dirancang untuk fleksibilitas multi-medan dengan lapisan logam reflektif.',
+    image: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=800'
   }
 ];

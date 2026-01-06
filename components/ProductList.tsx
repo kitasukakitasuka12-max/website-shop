@@ -9,17 +9,21 @@ interface ProductListProps {
 }
 
 const ProductList: React.FC<ProductListProps> = ({ onAddToCart }) => {
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(price);
+  };
+
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
         <div>
-          <h2 className="text-4xl font-heading font-bold mb-4 tracking-tight">FEATURED DROPS</h2>
-          <p className="text-gray-400">The latest innovations in futuristic wearable tech.</p>
+          <h2 className="text-4xl font-heading font-bold mb-4 tracking-tight">DROP UNGGULAN</h2>
+          <p className="text-gray-400">Inovasi terbaru dalam teknologi pakaian futuristik.</p>
         </div>
         <div className="flex gap-4">
-          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">ALL</button>
-          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">APPAREL</button>
-          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">FOOTWEAR</button>
+          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">SEMUA</button>
+          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">PAKAIAN</button>
+          <button className="text-sm font-bold text-gray-400 hover:text-white border-b border-transparent hover:border-white transition-all pb-1">ALAS KAKI</button>
         </div>
       </div>
 
@@ -42,14 +46,14 @@ const ProductList: React.FC<ProductListProps> = ({ onAddToCart }) => {
               </div>
               {product.featured && (
                 <div className="absolute top-4 left-4 glass px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-purple-400">
-                  Limited Drop
+                  Drop Terbatas
                 </div>
               )}
             </div>
             <div>
-              <div className="flex justify-between items-start mb-1">
+              <div className="flex flex-col mb-1">
                 <h3 className="text-lg font-bold font-heading">{product.name}</h3>
-                <span className="text-purple-400 font-bold tracking-tight">${product.price}</span>
+                <span className="text-purple-400 font-bold tracking-tight">{formatPrice(product.price)}</span>
               </div>
               <p className="text-gray-500 text-sm line-clamp-2">{product.description}</p>
             </div>

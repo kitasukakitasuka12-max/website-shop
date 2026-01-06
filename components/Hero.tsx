@@ -16,27 +16,27 @@ const Hero: React.FC = () => {
       
       <div className="relative z-20 text-center max-w-4xl px-6">
         <div className="inline-block px-4 py-1 mb-6 rounded-full glass border border-white/10 text-xs font-bold tracking-widest text-purple-400 uppercase">
-          New Era of Aesthetics
+          Era Baru Estetika
         </div>
         <h1 className="text-6xl md:text-8xl font-heading font-bold mb-6 tracking-tight leading-[0.9]">
-          BEYOND THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">HORIZON</span>
+          MELAMPAUI <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">CAKRAWALA</span>
         </h1>
         <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Curating high-performance garments infused with next-gen technology. Designed for the citizens of tomorrow.
+          Mengkurasi pakaian performa tinggi yang diinfus dengan teknologi masa depan. Dirancang untuk warga dunia hari esok.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-purple-500 hover:text-white transition-all flex items-center justify-center gap-2 group">
-            SHOP COLLECTION <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+            BELANJA KOLEKSI <ArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
           <button className="px-8 py-4 glass border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all">
-            VIEW LOOKBOOK
+            LIHAT LOOKBOOK
           </button>
         </div>
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50">
         <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-white" />
-        <span className="text-[10px] tracking-widest uppercase">Scroll</span>
+        <span className="text-[10px] tracking-widest uppercase">GULIR KE BAWAH</span>
       </div>
     </section>
   );

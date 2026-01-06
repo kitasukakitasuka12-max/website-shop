@@ -16,10 +16,10 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount, onCartToggle }) => {
             LUMINA LUXE
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">COLLECTIONS</a>
+            <a href="#" className="hover:text-white transition-colors">KOLEKSI</a>
             <a href="#" className="hover:text-white transition-colors">FUTURE WEAR</a>
-            <a href="#" className="hover:text-white transition-colors">ACCESSORIES</a>
-            <a href="#" className="hover:text-white transition-colors">ABOUT</a>
+            <a href="#" className="hover:text-white transition-colors">AKSESORIS</a>
+            <a href="#" className="hover:text-white transition-colors">TENTANG</a>
           </div>
         </div>
         
